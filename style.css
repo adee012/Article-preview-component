@@ -1,0 +1,150 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --Very-Dark-Blue: hsl(217, 19%, 35%);
+    --Desaturated-Dark: hsl(214, 17%, 51%);
+    --Grayish-Blue: hsl(212, 23%, 69%);
+    --Light-Blue: hsl(210, 46%, 95%);
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Light-Blue) ;
+    font-family: 'Manrope', sans-serif;
+    font-size: 13px;
+    
+}
+
+.card{
+    width: 732px;
+    height: 280px;
+    background-color: white;
+    position: absolute;
+    border-radius: 10px;
+}
+
+.drawers{
+    width: 286px;
+    height: 280px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    position: relative;
+    float: left;
+}
+
+.text{
+    width: 446px;
+    height: auto;
+    float: right;
+    padding: 0 30px;
+    display: flex;
+    position: relative;
+
+}
+
+.text-up h2{
+    color: var(--Very-Dark-Blue);
+}
+
+.text-up p{
+    color: var(--Desaturated-Dark);
+}
+
+.text-up{
+    padding-top: 25px;
+    padding-right: 30px;
+}
+
+.text-down{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: absolute;
+    bottom: -70px;
+
+}
+
+.profile{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.profile img{
+    width: 42px;
+    height: 42px;
+    border-radius: 50px;
+
+}
+
+.desc{
+    padding-left: 15px;
+}
+
+.desc h3{
+    color: var(--Very-Dark-Blue);
+}
+
+.desc p{
+    color: var(--Desaturated-Dark);
+}
+
+.share{
+    width: 32px;
+    height: 32px;
+    background-color: var(--Light-Blue);
+    border-radius: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    position: relative;
+    right: -135px;
+}
+
+.share:hover{
+    background-color: var(--Grayish-Blue);
+    cursor: pointer;
+}
+
+.share-link{
+    background-color: var(--Very-Dark-Blue);
+    width: 250px;
+    height: 55px;
+    justify-content: space-evenly;
+    align-items: center;
+    display: flex;
+    padding: 0px 10px;
+    border-radius: 10px;
+    position: absolute;
+    bottom: -7px;
+    right: -47px;
+    box-shadow: -1px 18px 34px -10px rgba(128,124,124,0.75);
+}
+
+.share-link::before{
+    content: '';
+    width: 20px;
+    height: 20px;
+    background-color: var(--Very-Dark-Blue) ;
+    position: absolute;
+    bottom: -10px;
+    left:50%;
+    transform: translateX(-50%) rotate(45deg);
+}
+
+.share-link p{
+    color: var(--Grayish-Blue);
+    letter-spacing: 5px;
+}
+
+.hide{
+    display: none;
+}
