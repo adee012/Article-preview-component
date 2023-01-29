@@ -148,3 +148,62 @@ body{
 .hide{
     display: none;
 }
+
+@media (max-width: 720px) {
+    .card{
+
+        width: 330px;
+        height: 480px;
+    }
+
+    .drawers{
+        width: 330px;
+        height: 200px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0;
+    }
+
+    .text-up{
+        padding: 30px 30px;
+        font-size: 11px;
+        width: 330px;
+        left: 85px;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    .text-up p{
+        font-size: 12px;
+    }
+
+    .text-down{
+        left: 115px;
+        padding: 0 0 0 30px;
+        font-size: 11px;
+        bottom: -55px;
+    }
+
+    .share{
+        right: -70px;
+        z-index: 1;
+    }
+
+    .share-link{
+        width: 330px;
+        height: 65px;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        bottom: -68px;
+        left: 115px;
+        box-shadow: none;
+        padding-right: 100px;
+    }
+
+    .share-link::before{
+        content: '';
+        width: 0;
+        height: 0;
+    }
+    
+}
